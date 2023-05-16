@@ -29,4 +29,4 @@ python script.py
 8. To quit the script, press `q` when prompted to continue generating cover letters.
 
 # Acknowledgements
-* Props to [Keshan Kathiripilay](https://www.linkedin.com/in/keshankathiripilay/) for the idea!
+* Idea inspired by [Keshan Kathiripilay](https://www.linkedin.com/in/keshankathiripilay/).
