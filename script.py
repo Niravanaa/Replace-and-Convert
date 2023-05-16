@@ -8,7 +8,9 @@ def replace_placeholder(doc, placeholder, replacement):
         if placeholder in p.text:
             inline = p.runs
             for item in range(len(inline)):
+                print(placeholder, inline[item].text)
                 if placeholder in inline[item].text:
+                    print("found!")
                     inline[item].text = inline[item].text.replace(placeholder,
                                                                   replacement)
 
@@ -18,25 +20,25 @@ def main():
         filename = "coverletter.docx"
         doc = docx.Document(filename)
         placeholders = {
-            "[RecipientName]": "",
-            "[RecipientTitle]": "",
-            "[Position]": "",
-            "[CompanyName]": "",
-            "[CompanyAddress]": "",
-            "[Address2]": ""
+            "RecipientName": "",
+            "RecipientTitle": "",
+            "Position": "",
+            "CompanyName": "",
+            "CompanyAddress": "",
+            "CityProvincePostal": ""
         }
         for placeholder in placeholders:
             replacement = input(f"Enter {placeholder}: ")
             placeholders[placeholder] = replacement
             replace_placeholder(doc, placeholder, replacement)
         doc.save(
-            placeholders["[CompanyName]"] + "_" +
-            placeholders["[Position]"] + ".docx"
+            placeholders["CompanyName"] + "_" +
+            placeholders["Position"] + ".docx"
         )
-        convert(placeholders["[CompanyName]"] + "_" +
-                placeholders["[Position]"] + ".docx")
-        os.remove(placeholders["[CompanyName]"] + "_" +
-                  placeholders["[Position]"] + ".docx")
+        convert(placeholders["CompanyName"] + "_" +
+                placeholders["Position"] + ".docx")
+        os.remove(placeholders["CompanyName"] + "_" +
+                  placeholders["Position"] + ".docx")
         choice = input("Press q to quit or any other key to continue: ")
         if choice.lower() == "q":
             break
