@@ -24,9 +24,18 @@ $ pip install python-docx docx2pdf
 python script.py
 ```
 5. Follow the prompts to enter the requested information for each placeholder in the cover letter template.
-6. The generated cover letter will be saved as a Word document (`[CompanyName]_[Position].docx`) and automatically converted into PDF format.
-7. The original Word document will be deleted.
-8. To quit the script, press `q` when prompted to continue generating cover letters.
+NOTE: This script contains the following hard-cded placeholders:
+```text
+[RecipientName]: The name of the recruiter
+[RecipientTitle]: The position of the recruiter
+[Position]: The position you are applying for
+[CompanyName]: The name of the company 
+[CompanyAddress]: The address of the company (Number, Street Name)
+[CityProvincePostal]: The city, province, and postal code of the company (e.g. Montreal, QC A0A 0A0)
+```
+7. The generated cover letter will be saved as a Word document (`[CompanyName]_[Position].docx`) and automatically converted into PDF format.
+8. The original Word document will be deleted.
+9. To quit the script, press `q` when prompted to continue generating cover letters.
 
 # Acknowledgements
 * Idea inspired by [Keshan Kathiripilay](https://www.linkedin.com/in/keshankathiripilay/).
