@@ -24,7 +24,7 @@ $ pip install python-docx docx2pdf
 python script.py
 ```
 5. Follow the prompts to enter the requested information for each placeholder in the cover letter template.
-NOTE: This script contains the following hard-cded placeholders:
+NOTE: This script contains the following pre-coded placeholders:
 ```text
 RecipientName: The name of the recruiter
 RecipientTitle: The position of the recruiter
