@@ -1,12 +1,14 @@
 # Replace-and-Convert
 This Python script generates personalized cover letters based on a template document. It utilizes the docx library to work with Microsoft Word documents and the docx2pdf library to convert the generated cover letters to PDF format.
 
-# Prerequisites
+**If you wish not to install the Python packages, an executable (.exe) form of the script can be downloaded [using this link](https://drive.google.com/uc?export=download&id=1NQs-KUm2NzbSTyO62IQYtVTbiF1uCpD7)**
+
+## Prerequisites
 * Python 3.x
 * `docx` library (python-docx package)
 * `docx2pdf` library
 
-# Installation
+## Installation
 1. Clone the repository:
 ```shell
 $ git clone https://github.com/Niravanaa/replace-and-convert.git
@@ -17,9 +19,9 @@ $ git clone https://github.com/Niravanaa/replace-and-convert.git
 $ pip install python-docx docx2pdf
 ```
 
-# Usage
+## Usage
 3. Place your .docx document (named `coverletter.docx`) in the same directory as the script.
-4. In a terminal window, run the script:
+4. Run the script, either from an IDE or using the following terminal command (at the directory containing the script):
 ```shell
 python script.py
 ```
@@ -37,5 +39,5 @@ CityProvincePostal: The city, province, and postal code of the company (e.g. Mon
 8. The original Word document will be deleted.
 9. To quit the script, press `q` when prompted to repeat the process.
 
-# Acknowledgements
+## Acknowledgements
 * Idea inspired by [Keshan Kathiripilay](https://www.linkedin.com/in/keshankathiripilay/).
