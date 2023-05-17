@@ -9,8 +9,8 @@ This Python script generates personalized cover letters based on a template docu
 # Installation
 1. Clone the repository:
 ```shell
-$ git clone https://github.com/Niravanaa/cover-letter-generator.git
-# cd cover-letter-generator
+$ git clone https://github.com/Niravanaa/replace-and-convert.git
+# cd replace-and-convert
 ```
 2. Install the required dependencies
 ```shell
@@ -18,8 +18,8 @@ $ pip install python-docx docx2pdf
 ```
 
 # Usage
-3. Place your cover letter document (named `coverletter.docx`) in the same directory as the script.
-4. Run the script:
+3. Place your .docx document (named `coverletter.docx`) in the same directory as the script.
+4. In a terminal window, run the script:
 ```shell
 python script.py
 ```
@@ -33,9 +33,9 @@ CompanyName: The name of the company
 CompanyAddress: The address of the company (Number, Street Name)
 CityProvincePostal: The city, province, and postal code of the company (e.g. Montreal, QC A0A 0A0)
 ```
-7. The generated cover letter will be saved as a Word document (`[CompanyName]_[Position].docx`) and automatically converted into PDF format.
+7. The generated file will be saved as a Word document (`[CompanyName]_[Position].docx`) and automatically converted into PDF format.
 8. The original Word document will be deleted.
-9. To quit the script, press `q` when prompted to continue generating cover letters.
+9. To quit the script, press `q` when prompted to repeat the process.
 
 # Acknowledgements
 * Idea inspired by [Keshan Kathiripilay](https://www.linkedin.com/in/keshankathiripilay/).
