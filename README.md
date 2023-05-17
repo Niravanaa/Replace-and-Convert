@@ -3,6 +3,8 @@ This Python script generates personalized cover letters based on a template docu
 
 **If you wish not to install the Python packages, an executable (.exe) form of the script can be downloaded [using this link](https://drive.google.com/uc?export=download&id=1NQs-KUm2NzbSTyO62IQYtVTbiF1uCpD7)**
 
+**Support for MacOS will be provided shortly.**
+
 ## Prerequisites
 * Python 3.x
 * `docx` library (python-docx package)
