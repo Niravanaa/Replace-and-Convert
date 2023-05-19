@@ -1,7 +1,7 @@
 # Replace-and-Convert
 This Python script generates PDF files based on a template .docx document. It utilizes the docx library to work with Microsoft Word documents and the docx2pdf library to convert the generated cover letters to PDF format.
 
-**If you wish not to install the Python packages, an executable (.exe) form of the script can be downloaded <a target="_blank" href="https://drive.google.com/uc?export=download&id=1NQs-KUm2NzbSTyO62IQYtVTbiF1uCpD7">using this link</a>.**
+**If you wish not to install the Python packages, an executable (.exe) form of the script can be downloaded <a target="_blank" href="https://drive.google.com/uc?export=download&id=1HKhBidOzMzex-D5nT4DlNXgqG0sKNKfV">using this link</a>.**
 
 **Support for MacOS will be provided shortly.**
 
