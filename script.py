@@ -1,8 +1,13 @@
 import tkinter as tk
+from tkinter import filedialog as fd
+from tkinter import StringVar
 from docx import Document
 from docx2pdf import convert
 import os
+import sys
 
+
+sys.stderr = open("consoleoutput.log", "w")
 
 placeholders = {
         "RecipientName": "",
@@ -12,6 +17,24 @@ placeholders = {
         "CompanyAddress": "",
         "CityProvincePostal": ""
 }
+
+filename = ''
+
+def select_file(label):
+    global filename
+
+    filetypes = (
+        ('Word Document', '*.docx'),
+        ('All files', '*.*')
+    )
+
+    filename = fd.askopenfilename(
+        title = 'Open your template Word document',
+        initialdir = '/',
+        filetypes = filetypes
+    )
+
+    label.configure(text=filename)
 
 def replace_placeholder(doc, placeholder, replacement):
     for p in doc.paragraphs:
@@ -23,7 +46,8 @@ def replace_placeholder(doc, placeholder, replacement):
 
 
 def generate_cover_letter():
-    filename = "coverletter.docx"
+    global filename
+    print(filename)
     doc = Document(filename)
     global placeholders
     for placeholder in placeholders:
@@ -43,10 +67,16 @@ root = tk.Tk()
 root.title("Cover Letter Generator")
 root.geometry("400x400")
 
+# Add choose file button
+fileLabel = tk.Label(root, text='')
+choose_file = tk.Button(root, text="Choose a File", command= lambda: select_file(fileLabel))
+choose_file.pack(pady=5)
+fileLabel.pack(pady=5)
+
 # Add labels and entry fields for each placeholder
 for placeholder in placeholders:
     label = tk.Label(root, text=placeholder)
-    label.pack(pady=3)
+    label.pack(pady=5)
     entry = tk.Entry(root)
     entry.pack()
     placeholders[placeholder] = entry
