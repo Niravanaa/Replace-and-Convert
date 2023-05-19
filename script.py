@@ -65,10 +65,11 @@ def quit_application():
 # Create the GUI
 root = tk.Tk()
 root.title("Cover Letter Generator")
-root.geometry("400x400")
+root.geometry("400x450")
+root.maxsize(400, 450)
 
 # Add choose file button
-fileLabel = tk.Label(root, text='')
+fileLabel = tk.Label(root, text='', wraplength=350)
 choose_file = tk.Button(root, text="Choose a File", command= lambda: select_file(fileLabel))
 choose_file.pack(pady=5)
 fileLabel.pack(pady=5)
