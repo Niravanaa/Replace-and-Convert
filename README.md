@@ -39,7 +39,6 @@ CityProvincePostal: The city, province, and postal code of the company (e.g. Mon
 ```
 7. The generated file will be saved as a Word document (`[CompanyName]_[Position].docx`) and automatically converted into PDF format.
 8. The original Word document will be deleted.
-9. To quit the script, press `q` when prompted to repeat the process.
 
 ## Acknowledgements
 * Idea inspired by [Keshan Kathiripilay](https://www.linkedin.com/in/keshankathiripilay/).
